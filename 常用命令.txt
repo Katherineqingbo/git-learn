@@ -1,0 +1,36 @@
+$git log       //不能察看已经删除了的commit记录
+$git reflog   //可以查看所有分支的所有操作记录
+$git log --oneline  --graph --all
+$git reset --hard HEAD^  //版本回退
+$git reset --hard xxx    //版本回退
+
+$git checkout -- filename //撤销工作区域的修改
+
+$git rm newfile //直接删除工作区或暂存区文件
+
+$git diff //比较不同版本下的同名文件
+
+$git clone //下载远程仓库（获取的是文件）
+$git fetch //获取远程仓库，但不同步到本地仓库（获取到的是修改不是文件）
+
+$git push origin :"分支名字" //删除远程分支
+$git branch -d "分支名字"    //删除本地分支
+
+//合并分支
+$git merge  
+$git rebase
+
+储藏管理
+$git stash save "NOT DONE" //[$git stash]储存未提交的工作区
+$git stash list
+$git stash apply 0  //[$git stash pop ]弹出工作区
+$git stash drop 0 //删除
+
+标签
+$git tag v1.1.0
+$git tag
+$git show v1.1.0
+$git push origin tag v1.1.0
+
+
+便于身为菜鸟的我记忆,如有错误欢迎大神指教!

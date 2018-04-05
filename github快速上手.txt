@@ -14,6 +14,9 @@ $ ssh-keygen -t rsa -C xxx@qq.com
 将c盘/c/Users/qingbo/.ssh/id_rsa路径下生成的.pub文件全部复制
 在github账号中找到Settings下的SSH and GPG keys中添加New SSH key 
 将复制的文件全部粘贴
+$ ssh -T git@github.com
+
+
 
 上传github文件
 
@@ -28,5 +31,7 @@ $ git commit -m "Github is the first study file."//提交至版本库
 $ git remote add origin git@github.com:xxx/git-learn.git
 $ git push -u origin master
 之后刷新当前页面就可以看到上传的文件了
+
+
 
 便于身为菜鸟的我记忆,如有错误欢迎大神指教!
